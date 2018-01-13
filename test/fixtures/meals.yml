@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-01-13
+  title: MyString
+  description: MyText
+  quantity: 1
+  category: MyString
+  location_area: MyString
+  thumb_image: MyText
+  main_image: MyText
+  status: MyString
+  location_address: MyText
+  karma: 1
+
+two:
+  date: 2018-01-13
+  title: MyString
+  description: MyText
+  quantity: 1
+  category: MyString
+  location_area: MyString
+  thumb_image: MyText
+  main_image: MyText
+  status: MyString
+  location_address: MyText
+  karma: 1

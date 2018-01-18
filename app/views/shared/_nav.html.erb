@@ -1,0 +1,31 @@
+<div class='logo'>
+  <h1>Food Waster</h1>
+</div>
+
+<ul class="nav nav-tabs custom-nav">
+  <li class="<%= active?(root_path) %>">
+    <%= link_to "Home", root_path %>
+  </li>
+  <li class="<%= active?(meals_path) %>">
+    <%= link_to "Meals", meals_path %>
+  </li>
+  <li class="<%= active?(new_meal_path) %>">
+    <%= link_to "Post a Meal", new_meal_path %>
+  </li>
+  <li class="dropdown pull-right">
+     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Profile<strong class="caret"></strong></a>
+    <ul class="dropdown-menu">
+      <li>
+        <%= link_to "View/Edit Profile", edit_user_registration_path %>
+      </li>
+      <li>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      </li>
+      <li class="divider">
+      </li>
+      <li>
+        <a href="#">Separated link</a>
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,26 @@
+<tr>
+  <td>
+    <%= meal.id %>
+  </td>
+  <td>
+    <%= meal.category %>
+  </td>
+  <td>
+    <%= truncate(meal.title) %>
+  </td>
+  <td>
+    <%= meal.date %>
+  </td>
+  <td>
+    <%= meal.user.username %>
+  </td>
+  <td>
+    <%= truncate(meal.description) %>
+  </td>
+  <td>
+    <%= link_to 'Edit', edit_meal_path(meal), id: "edit_#{meal.id}" %>
+  </td>
+  <td>
+    <%= link_to 'Delete', meal_path(meal), method: :delete, id: "delete_meal_#{meal.id}_from_index", data: { confirm: 'Are you sure?' } %>
+  </td>
+</tr>
